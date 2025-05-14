@@ -8,6 +8,19 @@
     font-family: system-ui, -apple-system, sans-serif;
 }
 
+.hidden {
+    opacity: 0;
+    transition: all .6s;
+    filter: blur(20px);
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 header {
     background-color: #13263d;
 
@@ -53,10 +66,19 @@ main {
     padding: 10px;
 }
 
+main section.fazemos {
+    margin: 40px 0;
+    margin-left: calc(50% - 240px);
+}
+
 main section.fazemos h2 {
     margin: 20px;
 
     text-align: center;
+}
+
+main section.fazemos article {
+    max-width: 600px;
 }
 
 main article {
@@ -70,7 +92,13 @@ main article {
 }
 
 main section#more-infos {
-    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 2000px;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 main section#more-infos div.more-divs {
@@ -84,16 +112,18 @@ main section#more-infos div.more-divs {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 div.more-divs img {
     border: 3px solid lightgray;
     border-radius: 60px;
-
     margin-bottom: 20px;
 
-    width: 100%;
+    width: 400px;
     height: 400px;
+    object-fit: cover;
 }
 
 div.more-divs h2 {
@@ -133,4 +163,68 @@ main section.infos-add img {
     border-radius: 10px;
 
     width: 430px;
+}
+
+footer {
+    background-color: #164685;
+
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2 {
+    background-color: #13263d;
+
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    text-align: center;
+    color: white;
+}
+
+div#redes-sociais {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer a {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-weight: bolder;
+    font-size: 1.2em;
+
+    color: white;
+
+    transition: all .3s !important;
+}
+
+footer a:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.23);
+    transform: translateY(-4px);
+}
+
+footer a#mail {
+    background: #4285F4
+}
+
+footer a#face {
+    background: linear-gradient(45deg, #1877f2, #3b5998);
+}
+
+footer a#wtzp {
+    background-color: rgb(10, 209, 10);
+}
+
+footer a#instagram {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 }

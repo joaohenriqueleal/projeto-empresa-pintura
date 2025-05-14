@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width: 700px) {
+    header img {
+        display: block;
+        width: 400px;
+    }
+    main section#more-infos {
+        display: flex;
+        justify-content: space-around;
+    }
+    main div.more-divs {
+        max-width: 550px;
+    }
+    main img {
+        margin-left: 50px;
+    }
+    main section.infos-add {
+        margin: auto;
+        max-width: 800px;
+        display: flex;
+    }
+    img#img-equipe {
+        width: 500px;
+    }
+}

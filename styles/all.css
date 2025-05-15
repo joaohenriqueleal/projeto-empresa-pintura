@@ -95,13 +95,13 @@ main section#more-infos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
     max-width: 2000px;
     margin: auto;
     box-sizing: border-box;
 }
 
 main section#more-infos div.more-divs {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.29);
     border-radius: 10px;
 
     margin-bottom: 30px;

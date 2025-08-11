@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+
+@media (max-width: 1224px) {
+    .sevicesContainer {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .bigCard {
+        width: 90%;
+        height: auto;
+    }
+
+    input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title, .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title p {
+        text-align: center;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main section.alternativePhase p {
+        font-size: 1.5em;
+    }
+    
+    .computePrice {
+        padding: 40px 10px;
+    }
+
+    .calculator {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .pResult {
+        width: 100%;
+    }
+}

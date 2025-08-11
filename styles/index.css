@@ -101,7 +101,7 @@ section.services {
 }
 
 .sevicesContainer {
-    width: 50%;
+    max-width: 1300px;
 
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@ section.services {
 
     padding: 24px;
     width: 400px;
-    height: 320px;
+    height: 340px;
 
     display: flex;
     flex-direction: column;

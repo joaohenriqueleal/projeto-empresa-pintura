@@ -29,7 +29,7 @@ class windowViewText {
             background-color: white;
             border-radius: 8px;
 
-            width: 50%;
+            width: 80%;
             height: 550px;
 
             display: flex;
@@ -39,6 +39,7 @@ class windowViewText {
         `
         const MainWindow = document.createElement('div')
         MainWindow.setAttribute('style', MainWindowStyle)
+        MainWindow.setAttribute('class', 'window')
 
         const WindowHeadStyles = `
             background-color: rgb(238, 238, 238);

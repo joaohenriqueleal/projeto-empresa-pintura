@@ -363,5 +363,5 @@ footer a {
 }
 
 footer a:hover {
-    transform: translateY(-4px) scale(1.05);
+    color: #d99f2b;
 }

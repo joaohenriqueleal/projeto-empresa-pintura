@@ -63,4 +63,8 @@
     .pResult {
         width: 100%;
     }
+    .card:hover {
+        background-color: rgb(246, 246, 246);
+        transform: translateY(0);
+    }
 }
